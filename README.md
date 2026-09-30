@@ -17,5 +17,7 @@ Business conclusions:
 4. Which category has the highest average order value, and which has the lowest?
    The "toys and gifts" category recorded the lowest average value, at 116 PLN. The "electronics" category achieved the highest average, at 379 PLN.
 5. In which month is a distinct "spike" in sales visible for a given category, and how does it compare to the rest of the year?
+   The Home and Garden category shows a clear upward trend during the spring and summer seasons. A seasonal increase can also be observed in the Toys and Gifts category.
 6. Does the sales channel structure differ across categories?
+   There is no correlation between the category and the sales channel. The report shows no significant differences.
    
