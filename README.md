@@ -30,11 +30,8 @@ DISTINCTCOUNT('Table'[order_ID])
 )
 
 The Best Month 'Card' - visual highlights the best sales month,
-The Best Month = 
-MAXX(
-VALUES('Table'[YearMonth]),
-[Sales]
-)
+
+<img width="215" height="93" alt="image" src="https://github.com/user-attachments/assets/83970a89-9052-4ec0-9c6e-c571fe22606f" />
 
 Sales Growth TOP vs AVG 'Card' -
 Sales Growth - TOP vs AVG = 
