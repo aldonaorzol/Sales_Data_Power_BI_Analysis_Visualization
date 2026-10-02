@@ -40,26 +40,26 @@ y-axis: sum of amount_zl
 
 <img width="279" height="437" alt="image" src="https://github.com/user-attachments/assets/e2b1742d-ed3e-4ec2-bde4-0b50a0b5bf52" />
 
-- Sales/ Category 'Table'-
-Columns: sales, category
+- Category/Sales 'Table'- allows users to view exact sales values for each category and easily compare category performance.
+Columns: category, sales
 
-- Total Sales Value in 2025 'Stacked bar chart'-
+- Total Sales Value in 2025 'Stacked bar chart'- compares total sales values across categories, allowing users to identify top-performing categories.
 
 y-axis: category
 x-axis:sum of amount_zl
 
-- Number of Orders in 2025 'Stacked bar chart'-
+- Number of Orders in 2025 'Stacked bar chart'- compares the number of orders across product categories, allowing users to identify the categories with the highest and lowest order volumes.
 
 y-axis: category
 x-axis: count of order_ID
 
-Auxiliary measures:
+Auxiliary:
 
-- Sales:
+- Sales - The measure calculates total sales revenue by adding together all values from the amount_zl column.
 
 <img width="179" height="40" alt="image" src="https://github.com/user-attachments/assets/e9aa559b-1227-4eba-8a1c-00c5a82e7fe8" />
 
-- YearMonth:
+- YearMonth - The column formats dates as Year-Month (YYYY-MM), enabling monthly aggregation and analysis of sales data.
 
 <img width="317" height="23" alt="image" src="https://github.com/user-attachments/assets/ad617fd1-6649-4018-b81d-5dcf256dc0e2" />
 
