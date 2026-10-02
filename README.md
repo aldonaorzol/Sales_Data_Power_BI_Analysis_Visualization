@@ -9,11 +9,28 @@ Analysis:
 x-axis: category
 y-axis: count of order_ID
 legend: sales_channel
+
 -Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
+legend: category
+values: sum of amount_zl
+
 Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
-Sales Over the Year 'Stacket area chart'
-AVG Basket Value
-The Best Month
+legend: sales_channel
+values: sum of amount_zl
+
+Sales Over the Year 'Stacket area chart' - 
+x-axis: date - month
+y-axis: sum of amount_zl
+
+AVG Basket Value 'Card' -
+
+AVG Basket Value = 
+DIVIDE(
+SUM('Tabela'[amount_zl]),
+DISTINCTCOUNT('Tabela'[order_ID])
+)
+
+The Best Month -
 Sales Growth TOP vs AVG
 Sales/ Category
 Total Sales Value in 2025
