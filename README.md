@@ -16,23 +16,23 @@ legend: sales_channel,
 - Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
 
 legend: category,
-values: sum of amount_zl
+values: sum of amount_zl,
 
 - Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
 
 legend: sales_channel,
-values: sum of amount_zl
+values: sum of amount_zl,
 
 - Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
 
 x-axis: date - month,
-y-axis: sum of amount_zl
+y-axis: sum of amount_zl,
 
 - AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
 
 <img width="245" height="92" alt="image" src="https://github.com/user-attachments/assets/81e9f513-87da-4387-a5f6-38217f9156a1" />
 
-- The Best Month 'Card' - visual highlights the best sales month,
+- The Best Month 'Card' - visual highlights the best sales month.
 
 <img width="215" height="93" alt="image" src="https://github.com/user-attachments/assets/83970a89-9052-4ec0-9c6e-c571fe22606f" />
 
@@ -45,13 +45,13 @@ Columns: category, sales
 
 - Total Sales Value in 2025 'Stacked bar chart'- compares total sales values across categories, allowing users to identify top-performing categories.
 
-y-axis: category
-x-axis:sum of amount_zl
+y-axis: category,
+x-axis: sum of amount_zl,
 
 - Number of Orders in 2025 'Stacked bar chart'- compares the number of orders across product categories, allowing users to identify the categories with the highest and lowest order volumes.
 
-y-axis: category
-x-axis: count of order_ID
+y-axis: category,
+x-axis: count of order_ID,
 
 Auxiliary:
 
