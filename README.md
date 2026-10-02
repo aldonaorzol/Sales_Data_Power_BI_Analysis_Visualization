@@ -5,6 +5,8 @@ Cleaning Process https://github.com/aldonaorzol/Sales_Data_Power_Query_Cleaning
 <img width="1438" height="808" alt="image" src="https://github.com/user-attachments/assets/815698de-f102-42f8-842f-023230043f01" />
 
 
+Sales analysis to identify trends, the most popular product categories, and the most effective sales channels, as well as an assessment of their impact on generated revenue.
+
 Analysis:
 
 - Sales Channel Structure (Stacked Column Chart)
