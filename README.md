@@ -5,77 +5,58 @@ Cleaning Process https://github.com/aldonaorzol/Sales_Data_Power_Query_Cleaning
 <img width="1433" height="803" alt="image" src="https://github.com/user-attachments/assets/3c31f141-85aa-4ac0-9659-87d294b060f4" />
 
 Analysis:
--Sales Channel Structure 'Stacket column chart'- visualizes the contribution of each channel to the final result.
+
+- Sales Channel Structure 'Stacket column chart'- visualizes the contribution of each channel to the final result.
+
 x-axis: category
 y-axis: count of order_ID
 legend: sales_channel
 
--Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
+- Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
+
 legend: category
 values: sum of amount_zl
 
-Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
+-Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
+
 legend: sales_channel
 values: sum of amount_zl
 
-Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
+- Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
+
 x-axis: date - month
 y-axis: sum of amount_zl
 
-AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
-AVG Basket Value = 
-DIVIDE(
-SUM('Table'[amount_zl]),
-DISTINCTCOUNT('Table'[order_ID])
-)
+- AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
 
-The Best Month 'Card' - visual highlights the best sales month,
+<img width="245" height="92" alt="image" src="https://github.com/user-attachments/assets/81e9f513-87da-4387-a5f6-38217f9156a1" />
+
+- The Best Month 'Card' - visual highlights the best sales month,
 
 <img width="215" height="93" alt="image" src="https://github.com/user-attachments/assets/83970a89-9052-4ec0-9c6e-c571fe22606f" />
 
-Sales Growth TOP vs AVG 'Card' -
-Sales Growth - TOP vs AVG = 
-VAR MonthlySales =
-ADDCOLUMNS(
-VALUES('Table'[date]),
-"Sales", [Sales]
-)
- 
-VAR BestMonthSales =
-MAXX(MonthlySales, [Sales])
- 
-VAR AvgOtherMonths =
-AVERAGEX(
-FILTER(
-MonthlySales,
-[Sales] <> BestMonthSales
-),
-[Sales]
-)
- 
-RETURN
-DIVIDE(
-BestMonthSales - AvgOtherMonths,
-AvgOtherMonths
-)
+- Sales Growth TOP vs AVG 'Card' -
 
-Sales/ Category 'Table'-
+<img width="279" height="437" alt="image" src="https://github.com/user-attachments/assets/e2b1742d-ed3e-4ec2-bde4-0b50a0b5bf52" />
+
+- Sales/ Category 'Table'-
 Columns: sales, category
 
-Total Sales Value in 2025 'Stacked bar chart'-
+- Total Sales Value in 2025 'Stacked bar chart'-
+
 y-axis: category
 x-axis:sum of amount_zl
 
-Number of Orders in 2025 'Stacked bar chart'-
+- Number of Orders in 2025 'Stacked bar chart'-
+
 y-axis: category
 x-axis: count of order_ID
 
 Auxiliary measures:
 
-Sales = 
-SUM(tabela[amount_zl])
+<img width="179" height="40" alt="image" src="https://github.com/user-attachments/assets/e9aa559b-1227-4eba-8a1c-00c5a82e7fe8" />
 
-YearMonth = FORMAT('Table'[date], "YYYY-MM")
+<img width="317" height="23" alt="image" src="https://github.com/user-attachments/assets/ad617fd1-6649-4018-b81d-5dcf256dc0e2" />
 
 Business conclusions:
 
