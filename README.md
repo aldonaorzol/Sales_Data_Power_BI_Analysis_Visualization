@@ -19,6 +19,7 @@ Business conclusions:
 5. In which month is a distinct "spike" in sales visible for a given category, and how does it compare to the rest of the year?
    The Home and Garden category shows a clear upward trend during the spring and summer seasons. A seasonal increase can also be observed in the Toys and Gifts category.
 6. Does the sales channel structure differ across categories?
+
    There is no correlation between the category and the sales channel. The report shows no significant differences.
 
 <img width="1409" height="794" alt="image" src="https://github.com/user-attachments/assets/dd440d8b-63a0-48e9-a029-893d60215253" />
