@@ -6,6 +6,17 @@ Analysis
 
 <img width="1433" height="803" alt="image" src="https://github.com/user-attachments/assets/3c31f141-85aa-4ac0-9659-87d294b060f4" />
 
+Sales Channel Structure
+Percentage Share of Sales by Category
+Percentage of Sales by Channel
+Sales Over the Year
+AVG Basket Value
+The Best Month
+Sales Growth TOP vs AVG
+Sales/ Category
+Total Sales Value in 2025
+Number of Orders in 2025
+
 Business conclusions:
 
 1.	Which category sells best throughout 2025 in terms of sales value and number of orders?
