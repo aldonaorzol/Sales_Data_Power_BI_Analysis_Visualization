@@ -7,59 +7,70 @@ Cleaning Process https://github.com/aldonaorzol/Sales_Data_Power_Query_Cleaning
 
 Analysis:
 
-- Sales Channel Structure 'Stacket column chart'- visualizes the contribution of each channel to the final result.
+- Sales Channel Structure (Stacked Column Chart)
+Visualizes the contribution of each sales channel to the total number of orders.
 
-x-axis: category,
-y-axis: count of order_ID,
-legend: sales_channel,
+X-axis: Category,
+Y-axis: Count of Order_ID,
+Legend: Sales_Channel.
 
-- Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
+- Percentage Share of Sales by Category (Pie Chart)
+Shows the sales structure and the percentage contribution of each category to total sales.
 
-legend: category,
-values: sum of amount_zl,
+Legend: Category,
+Values: Sum of Amount_ZL
 
-- Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
+- Percentage of Sales by Channel (Pie Chart)
+Provides a clear visualization of how total sales are distributed across sales channels.
 
-legend: sales_channel,
-values: sum of amount_zl,
+Legend: Sales_Channel,
+Values: Sum of Amount_zl,
 
-- Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
+- Sales Over the Year (Stacked Area Chart)
+Clearly illustrates monthly sales trends throughout the year.
 
-x-axis: date - month,
-y-axis: sum of amount_zl,
+X-axis: Month,
+Y-axis: Sum of Amount_zl,
 
-- AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
+- AVG Basket Value (Card)
+Enables users to monitor the average amount spent per order.
 
 <img width="245" height="92" alt="image" src="https://github.com/user-attachments/assets/81e9f513-87da-4387-a5f6-38217f9156a1" />
 
-- The Best Month 'Card' - visual highlights the best sales month.
+- The Best Month (Card)
+Highlights the month with the highest sales performance.
 
 <img width="215" height="93" alt="image" src="https://github.com/user-attachments/assets/83970a89-9052-4ec0-9c6e-c571fe22606f" />
 
-- Sales Growth TOP vs AVG 'Card' - visual was chosen to highlight the percentage difference between the best-performing month and the average of all other months. 
+- Sales Growth TOP vs AVG (Card)
+ Highlights the percentage difference between the best-performing month and the average of all other months. 
 
 <img width="279" height="437" alt="image" src="https://github.com/user-attachments/assets/e2b1742d-ed3e-4ec2-bde4-0b50a0b5bf52" />
 
-- Category/Sales 'Table'- allows users to view exact sales values for each category and easily compare category performance.
-Columns: category, sales
+- Category/Sales (Table)
+Allows users to view exact sales values for each category and easily compare category performance.
 
-- Total Sales Value in 2025 'Stacked bar chart'- compares total sales values across categories, allowing users to identify top-performing categories.
+Columns: Category, Sales
 
-y-axis: category,
-x-axis: sum of amount_zl,
+- Total Sales Value in 2025 (Stacked bar chart)
+Compares total sales values across categories, allowing users to identify top-performing categories.
 
-- Number of Orders in 2025 'Stacked bar chart'- compares the number of orders across product categories, allowing users to identify the categories with the highest and lowest order volumes.
+Y-axis: Category,
+X-axis: Sum of Amount_zl,
 
-y-axis: category,
-x-axis: count of order_ID,
+- Number of Orders in 2025 (Stacked bar chart)
+Compares the number of orders across categories, allowing users to identify the categories with the highest and lowest order volumes.
+
+Y-axis: Category,
+X-axis: Count of Order_ID,
 
 Auxiliary:
 
-- Sales - The measure calculates total sales revenue by adding together all values from the amount_zl column.
+- Sales - Calculates total sales revenue by summing all values in the amount_zl column.
 
 <img width="179" height="40" alt="image" src="https://github.com/user-attachments/assets/e9aa559b-1227-4eba-8a1c-00c5a82e7fe8" />
 
-- YearMonth - The column formats dates as Year-Month (YYYY-MM), enabling monthly aggregation and analysis of sales data.
+- YearMonth - Formats dates as Year-Month (YYYY-MM), enabling monthly aggregation and analysis of sales data.
 
 <img width="317" height="23" alt="image" src="https://github.com/user-attachments/assets/ad617fd1-6649-4018-b81d-5dcf256dc0e2" />
 
