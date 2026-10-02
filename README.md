@@ -21,6 +21,7 @@ Business conclusions:
 6. Does the sales channel structure differ across categories?
    There is no correlation between the category and the sales channel. The report shows no significant differences.
 
+<img width="1409" height="794" alt="image" src="https://github.com/user-attachments/assets/dd440d8b-63a0-48e9-a029-893d60215253" />
 
-   <img width="1362" height="797" alt="image" src="https://github.com/user-attachments/assets/ce96d868-62ac-4bef-8823-d559c66147db" />
+ 
 
