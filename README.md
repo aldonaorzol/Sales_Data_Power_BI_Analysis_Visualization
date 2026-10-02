@@ -23,18 +23,62 @@ x-axis: date - month
 y-axis: sum of amount_zl
 
 AVG Basket Value 'Card' -
-
 AVG Basket Value = 
 DIVIDE(
-SUM('Tabela'[amount_zl]),
-DISTINCTCOUNT('Tabela'[order_ID])
+SUM('Table'[amount_zl]),
+DISTINCTCOUNT('Table'[order_ID])
 )
 
-The Best Month -
-Sales Growth TOP vs AVG
-Sales/ Category
-Total Sales Value in 2025
-Number of Orders in 2025
+The Best Month 'Card' -
+The Best Month = 
+MAXX(
+VALUES('Table'[YearMonth]),
+[Sales]
+)
+
+Sales Growth TOP vs AVG 'Card' -
+Sales Growth - TOP vs AVG = 
+VAR MonthlySales =
+ADDCOLUMNS(
+VALUES('Table'[date]),
+"Sales", [Sales]
+)
+ 
+VAR BestMonthSales =
+MAXX(MonthlySales, [Sales])
+ 
+VAR AvgOtherMonths =
+AVERAGEX(
+FILTER(
+MonthlySales,
+[Sales] <> BestMonthSales
+),
+[Sales]
+)
+ 
+RETURN
+DIVIDE(
+BestMonthSales - AvgOtherMonths,
+AvgOtherMonths
+)
+
+Sales/ Category 'Table'-
+Columns: sales, category
+
+Total Sales Value in 2025 'Stacked bar chart'-
+y-axis: category
+x-axis:sum of amount_zl
+
+Number of Orders in 2025 'Stacked bar chart'-
+y-axis: category
+x-axis: count of order_ID
+
+Auxiliary measures:
+
+Sales = 
+SUM(tabela[amount_zl])
+
+YearMonth = FORMAT('Table'[date], "YYYY-MM")
 
 Business conclusions:
 
