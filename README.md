@@ -54,7 +54,11 @@ x-axis: count of order_ID
 
 Auxiliary measures:
 
+Sales:
+
 <img width="179" height="40" alt="image" src="https://github.com/user-attachments/assets/e9aa559b-1227-4eba-8a1c-00c5a82e7fe8" />
+
+YearMonth:
 
 <img width="317" height="23" alt="image" src="https://github.com/user-attachments/assets/ad617fd1-6649-4018-b81d-5dcf256dc0e2" />
 
