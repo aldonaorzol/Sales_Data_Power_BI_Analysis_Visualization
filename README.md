@@ -2,29 +2,30 @@
 
 Cleaning Process https://github.com/aldonaorzol/Sales_Data_Power_Query_Cleaning
 
-<img width="1433" height="803" alt="image" src="https://github.com/user-attachments/assets/3c31f141-85aa-4ac0-9659-87d294b060f4" />
+<img width="1438" height="808" alt="image" src="https://github.com/user-attachments/assets/815698de-f102-42f8-842f-023230043f01" />
+
 
 Analysis:
 
 - Sales Channel Structure 'Stacket column chart'- visualizes the contribution of each channel to the final result.
 
-x-axis: category
-y-axis: count of order_ID
-legend: sales_channel
+x-axis: category,
+y-axis: count of order_ID,
+legend: sales_channel,
 
 - Percentage Share of Sales by Category 'Pie chart' - shows the sales structure and the percentage share of each category in the total.
 
-legend: category
+legend: category,
 values: sum of amount_zl
 
--Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
+- Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of how total sales are distributed across sales channels.
 
-legend: sales_channel
+legend: sales_channel,
 values: sum of amount_zl
 
 - Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
 
-x-axis: date - month
+x-axis: date - month,
 y-axis: sum of amount_zl
 
 - AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
@@ -35,7 +36,7 @@ y-axis: sum of amount_zl
 
 <img width="215" height="93" alt="image" src="https://github.com/user-attachments/assets/83970a89-9052-4ec0-9c6e-c571fe22606f" />
 
-- Sales Growth TOP vs AVG 'Card' -
+- Sales Growth TOP vs AVG 'Card' - visual was chosen to highlight the percentage difference between the best-performing month and the average of all other months. 
 
 <img width="279" height="437" alt="image" src="https://github.com/user-attachments/assets/e2b1742d-ed3e-4ec2-bde4-0b50a0b5bf52" />
 
@@ -54,11 +55,11 @@ x-axis: count of order_ID
 
 Auxiliary measures:
 
-Sales:
+- Sales:
 
 <img width="179" height="40" alt="image" src="https://github.com/user-attachments/assets/e9aa559b-1227-4eba-8a1c-00c5a82e7fe8" />
 
-YearMonth:
+- YearMonth:
 
 <img width="317" height="23" alt="image" src="https://github.com/user-attachments/assets/ad617fd1-6649-4018-b81d-5dcf256dc0e2" />
 
