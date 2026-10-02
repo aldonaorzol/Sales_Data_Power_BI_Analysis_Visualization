@@ -18,18 +18,18 @@ Percentage of Sales by Channel 'Pie chart' - provides a clear visualization of h
 legend: sales_channel
 values: sum of amount_zl
 
-Sales Over the Year 'Stacket area chart' - 
+Sales Over the Year 'Stacket area chart' - clearly illustrates monthly sales trends over the course of the year.
 x-axis: date - month
 y-axis: sum of amount_zl
 
-AVG Basket Value 'Card' -
+AVG Basket Value 'Card' - visual enabling users to monitor the average amount spent per order at a glance.
 AVG Basket Value = 
 DIVIDE(
 SUM('Table'[amount_zl]),
 DISTINCTCOUNT('Table'[order_ID])
 )
 
-The Best Month 'Card' -
+The Best Month 'Card' - visual highlights the best sales month,
 The Best Month = 
 MAXX(
 VALUES('Table'[YearMonth]),
