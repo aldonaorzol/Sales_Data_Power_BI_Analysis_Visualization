@@ -20,4 +20,7 @@ Business conclusions:
    The Home and Garden category shows a clear upward trend during the spring and summer seasons. A seasonal increase can also be observed in the Toys and Gifts category.
 6. Does the sales channel structure differ across categories?
    There is no correlation between the category and the sales channel. The report shows no significant differences.
-   
+
+
+   <img width="1362" height="797" alt="image" src="https://github.com/user-attachments/assets/ce96d868-62ac-4bef-8823-d559c66147db" />
+
