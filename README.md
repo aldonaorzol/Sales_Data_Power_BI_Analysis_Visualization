@@ -5,13 +5,22 @@ Cleaning Process https://github.com/aldonaorzol/Sales_Data_Power_Query_Cleaning
 <img width="1438" height="808" alt="image" src="https://github.com/user-attachments/assets/815698de-f102-42f8-842f-023230043f01" />
 
 
-Sales analysis to identify trends, the most popular product categories, and the most effective sales channels, as well as an assessment of their impact on generated revenue.
+The purpose of this analysis is to identify sales trends, determine the most popular product categories, evaluate the effectiveness of individual sales channels, and assess their impact on revenue generation. The dashboard enables users to quickly monitor sales performance and identify areas with the highest business potential.
+
 
 Analysis:
 
 - Sales Channel Structure (Stacked Column Chart)
-Visualizes the contribution of each sales channel to the total number of orders.
 
+Purpose:
+ Visualizes the distribution of orders across product categories and sales channels.
+
+Insights:
+-Identifies which sales channels generate the highest number of orders.
+-Shows how customer purchasing behavior differs across categories.
+-Enables comparison of category popularity within each sales channel.
+
+Configuration:
 X-axis: Category,
 Y-axis: Count of Order_ID,
 Legend: Sales_Channel.
